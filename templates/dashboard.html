@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA ERP Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-4">
+    <h2 class="text-center">🏛️ NBA ERP Dashboard</h2>
+
+    <div class="card p-4 mt-4">
+        <h5>Upload Marks</h5>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="form-control mb-2">
+            <button class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+
+    <div class="card p-4 mt-4">
+        <h5>Actions</h5>
+        <a href="/co" class="btn btn-success">CO Attainment</a>
+        <a href="/po" class="btn btn-warning">PO Attainment</a>
+        <a href="/report" class="btn btn-danger">Download Report</a>
+    </div>
+</div>
+
+</body>
+</html>
